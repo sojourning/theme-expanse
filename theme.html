@@ -164,6 +164,9 @@
             {% if post.type == 'link' or post.type == 'webclip' %}
             <p class="link-url"><i class="icon-share"></i> <a href="{{ link.url }}">{{ link.url }}</a></p>
             {% endif %}
+            {% if post.title=="Submit a Story" %}
+            here
+            {% end if %}
           </div>
         </div>
         {% if post.tags %}
