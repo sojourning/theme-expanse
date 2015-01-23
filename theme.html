@@ -50,7 +50,11 @@
           <li><a href="{{ site.base_url }}">Blog</a></li>
             {% for page in pages %}
             <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
+
             {% endfor %}
+            {% if post.title == 'Submit a Story' %}
+            
+            {% endif %}
         </ul>
         {% endif %}
       </div>
@@ -164,13 +168,7 @@
             {% if post.type == 'link' or post.type == 'webclip' %}
             <p class="link-url"><i class="icon-share"></i> <a href="{{ link.url }}">{{ link.url }}</a></p>
             {% endif %}
-            {% if post.title == 'Submit a Story' %}
-            <div class="cognito">
-<script src="https://services.cognitoforms.com/include/required"></script>
-<script src="https://services.cognitoforms.com/session/script/f0e5e28c-4390-43b7-b5a1-e17ab6b512c5"></script>
-<script>Cognito.load("forms", { id: "2" });</script>
-</div>
-            {% endif %}
+            
           </div>
         </div>
         {% if post.tags %}
