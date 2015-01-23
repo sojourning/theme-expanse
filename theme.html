@@ -47,12 +47,13 @@
         <h1><a href="{{ site.base_url }}">{{ site.name }}</a></h1>
         {% if pages %}
         <ul class="cover-nav">
+        <li><a href="https://www.cognitoforms.com/Workingspaces1/WorkingSpacesQuestionnaire2" class="" target="_blank">Submit a Story</a></li>
           <li><a href="{{ site.base_url }}">Blog</a></li>
             {% for page in pages %}
             <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
 
             {% endfor %}
-            <li><a href="https://www.cognitoforms.com/Workingspaces1/WorkingSpacesQuestionnaire2" class="" target="_blank">Submit a Story</a></li>
+
         </ul>
         {% endif %}
       </div>
